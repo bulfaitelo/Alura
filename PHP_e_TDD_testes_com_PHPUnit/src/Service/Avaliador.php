@@ -12,6 +12,10 @@ class Avaliador
     private $maioresLances;
     public function avalia(Leilao $leilao) {
 
+        if ($leilao->estaFinalizado()) {
+            throw new \DomainException('Leilao já Finalizado');
+        }
+
         if (empty($leilao->getLances())) {
             throw new \DomainException('Não é possível avaliar leilão vazio');
             
