@@ -7,6 +7,7 @@ use Alura\Leilao\Model\Lance;
 use Alura\Leilao\Model\Leilao;
 use Alura\Leilao\Model\Usuario;
 use Alura\Leilao\Service\Avaliador;
+use DomainException;
 
 use function PHPUnit\Framework\assertJson;
 use function PHPUnit\Framework\assertTrue;
@@ -14,6 +15,7 @@ use function PHPUnit\Framework\assertTrue;
 class AvaliadorTest extends TestCase
 {
 
+    /** @var Avaliador */
     private $leiloeiro;
     protected function setUp(): void {        
         $this->leiloeiro = new Avaliador();
@@ -71,6 +73,16 @@ class AvaliadorTest extends TestCase
         static::assertEquals(2000, $maioresLances[1]->getValor());
         static::assertEquals(1700, $maioresLances[2]->getValor());
 
+    }
+
+
+    public function testLeilaoVasioNaoPodeSerAvaliado() {
+
+        $this->expectException(\DomainException::class);
+        $this->expectExceptionMessage('Não é possível avaliar leilão vazio');
+        
+        $leilao = new Leilao('Fusca Azul');
+        $this->leiloeiro->avalia($leilao);
     }
 
 
