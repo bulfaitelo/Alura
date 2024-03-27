@@ -34,5 +34,6 @@ Como não aprender orientação a objetos: Herança:
 https://www.alura.com.br/artigos/como-nao-aprender-orientacao-a-objetos-heranca
 
 
-
+Além de conhecer a função de autoload do PHP, acabamos por implementar a PSR-4. Ela dá algumas recomendações para escrevermos autoloaders e você pode conferir em detalhes sobre a PSR-4 no PHP-FIG.
+https://www.php-fig.org/psr/psr-4/
 
