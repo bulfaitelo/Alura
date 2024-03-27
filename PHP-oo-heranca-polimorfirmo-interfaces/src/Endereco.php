@@ -16,17 +16,17 @@ class Endereco
         $this->numero = $numero;
     }
 
-    public function getCidade() : string {
+    public function recuperaCidade() : string {
         return $this->cidade;
     }
-    public function getBairro() : string {
+    public function recuperaBairro() : string {
         return $this->bairro;
     }
-    public function getRua() : string {
+    public function recuperaRua() : string {
         return $this->rua;
     }
     
-    public function getNumero() : string {
+    public function recuperaNumero() : string {
         return $this->numero;
     }
 

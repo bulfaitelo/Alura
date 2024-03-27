@@ -1,6 +1,6 @@
 # Alura
 
-# PHP_e_TDD_testes_com_PHPUnit
+## PHP_e_TDD_testes_com_PHPUnit
 
 
 
@@ -17,7 +17,7 @@ Para ter mais detalhes e ver alguns exemplos práticos, você pode conferir a do
 https://phpunit.readthedocs.io/en/8.5/fixtures.html
 
 
-##  Para saber mais: TDD
+###  Para saber mais: TDD
 
 Conhecemos nesta aula o padrão conhecido como TDD (Test Driven Development), ou desenvolvimento guiado a testes.
 
@@ -26,3 +26,13 @@ Esta abordagem pode nos trazer algumas vantagens e vale um estudo mais aprofunda
 Um material sucinto e interessante sobre o assunto pode ser encontrado nesta página da Caelum.
 
 Na casa do código há o livro de TDD com PHP, que aborda o tema com mais detalhes, utilizando especificamente PHP e PHPUnit.
+
+
+## PHP-oo-heranca-polimorfirmo-interfaces
+
+Como não aprender orientação a objetos: Herança:
+https://www.alura.com.br/artigos/como-nao-aprender-orientacao-a-objetos-heranca
+
+
+
+
