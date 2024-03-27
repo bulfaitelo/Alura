@@ -4,8 +4,12 @@ namespace Alura\Banco\Modelo\Conta;
 class Conta
 {
     private $titular;
-    private $saldo;
+    protected $saldo;
     private static $numeroDeContas = 0;
+    /**
+     * @var int $tipo 1 == CC; 2 == Pp
+     */
+    private $tipo;
 
     public function __construct(Titular $titular)
     {
@@ -22,12 +26,16 @@ class Conta
 
     public function saca(float $valorASacar): void
     {
-        if ($valorASacar > $this->saldo) {
+        
+        $tarifaSaque = $valorASacar * 0.05 ; 
+        
+        $valorSaque = $valorASacar + $tarifaSaque;
+        if ($valorSaque > $this->saldo) {
             echo "Saldo indisponível";
             return;
         }
 
-        $this->saldo -= $valorASacar;
+        $this->saldo -= $valorSaque;
     }
 
     public function deposita(float $valorADepositar): void
@@ -47,8 +55,8 @@ class Conta
             return;
         }
 
-        $this->sacar($valorATransferir);
-        $contaDestino->depositar($valorATransferir);
+        $this->saca($valorATransferir);
+        $contaDestino->deposita($valorATransferir);
     }
 
     public function recuperaSaldo(): float
