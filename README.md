@@ -40,3 +40,22 @@ https://www.php-fig.org/psr/psr-4/
 Este artigo da Caelum fala justamente sobre isso: 
 [Como não aprender orientação a objetos: o excesso de ifs.](https://www.alura.com.br/artigos/como-nao-aprender-orientacao-a-objetos-o-excesso-de-ifs)
 
+
+
+Até aqui, já tínhamos visto três dos quatro pilares da orientação a objetos:
+
+    Abstração
+    Encapsulamento
+    Herança
+
+Nesta aula, começamos a falar sobre o 4º pilar: Polimorfismo.
+
+Este 4º princípio está diretamente ligado ao 3º (herança), pois através da herança conseguimos alcançar o polimorfismo.
+
+Polimorfismo é a capacidade de um objeto poder ser referenciado de várias formas (cuidado, polimorfismo não quer dizer que o objeto fica se transformando, muito pelo contrário, um objeto nasce de um tipo e morre daquele tipo, o que pode mudar é a maneira como nos referimos a ele).
+
+Com isso podemos, por exemplo, receber um Funcionario por parâmetro em uma função/método e passar um Gerente. Podemos nos referir à instância de Gerente de mais de uma forma, e isso nos pode ser útil em vários casos, como já vimos nesta aula.
+
+Caso queira ler com mais calma e detalhes, existe um capítulo sobre polimorfismo na apostila de Java da Caelum.
+[apostila de Java da Caelum.](https://www.caelum.com.br/apostila/apostila-java-orientacao-objetos.pdf)
+
