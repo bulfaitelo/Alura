@@ -59,3 +59,14 @@ Com isso podemos, por exemplo, receber um Funcionario por parâmetro em uma fun�
 Caso queira ler com mais calma e detalhes, existe um capítulo sobre polimorfismo na apostila de Java da Caelum.
 [apostila de Java da Caelum.](https://www.caelum.com.br/apostila/apostila-java-orientacao-objetos.pdf)
 
+
+
+Diversas linguagens de programação modernas abriram mão de permitir a herança múltipla, devido a um problema conhecido como Problema diamante.
+
+Se quiser entender mais sobre o assunto, é uma pesquisa que vale a pena. Aqui estão alguns links:
+    
+    [The diamond problem](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem)
+    [Problema do diamante](https://www.alura.com.br/apostila-python-orientacao-a-objetos/heranca-multipla-e-interfaces#problema-do-diamante)
+
+
+
