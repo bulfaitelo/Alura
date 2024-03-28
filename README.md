@@ -70,3 +70,20 @@ Se quiser entender mais sobre o assunto, é uma pesquisa que vale a pena. Aqui e
 
 
 
+
+O PHP fornece uma outra forma de reutilizarmos código, sem a necessidade de herança, através de Traits.
+
+Seu uso tem se tornado mais comum, com a evolução da linguagem, então vale a pena dar uma lida sobre Traits[na documentação oficial do PHP](https://www.php.net/manual/pt_BR/language.oop5.traits.php).
+
+Durante os treinamentos de Orientação a Objetos, nós organizamos nossas pastas utilizando uma estrutura bastante comum.
+
+Existe uma pasta raiz para nosso código (src) que inclusive facilita que a gente siga à PSR-4.
+
+Dentro dessa pasta raiz, temos sub pastas que identificam responsabilidades em nosso sistema
+Arquitetura
+
+Organização de pastas em nosso código é um início bem simplório de um estudo sobre arquitetura. Como organizar nosso projeto é um estudo muito importante e existem vários livros, palestras e conteúdo em geral sobre isso
+Alternativas à nossa abordagem
+
+É muito comum e recomendado por muitos que ao invés de separar as sub pastas por responsabilidade (Model, Service, etc.), separemos por conceitos de domínio, parecido com o que fizemos dentro da pasta Model. Estudos específicos de arquitetura e design de código abordam estes conceitos com muito mais detalhes.
+
